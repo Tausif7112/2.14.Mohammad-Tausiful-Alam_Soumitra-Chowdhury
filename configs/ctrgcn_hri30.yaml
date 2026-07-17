@@ -1,0 +1,26 @@
+model: model.ctrgcn.Model
+model_args:
+  num_class: 30
+  num_point: 25
+  num_person: 1
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: spatial
+
+weights: pretrained_model/NTU60_Xsub/CTRGCN_joint_89.9/runs-60-37560.pt
+
+num_epoch: 50
+batch_size: 32
+
+optimizer: SGD
+optimizer_args:
+  momentum: 0.9
+  nesterov: true
+  weight_decay: 0.0004
+
+scheduler: MultiStepLR
+scheduler_args:
+  milestones: [30, 40]
+  gamma: 0.1
+
+loss: CrossEntropyLoss

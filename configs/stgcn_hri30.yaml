@@ -1,0 +1,27 @@
+model: net.st_gcn.Model
+model_args:
+  in_channels: 3
+  num_class: 30
+  dropout: 0.5
+  edge_importance_weighting: true
+  graph_args:
+    layout: ntu-rgb+d
+    strategy: spatial
+
+weights: models/st_gcn.ntu-xsub.pt
+
+num_epoch: 50
+batch_size: 32
+
+optimizer: SGD
+optimizer_args:
+  momentum: 0.9
+  nesterov: true
+  weight_decay: 0.0001
+
+scheduler: MultiStepLR
+scheduler_args:
+  milestones: [30, 40]
+  gamma: 0.1
+
+loss: CrossEntropyLoss

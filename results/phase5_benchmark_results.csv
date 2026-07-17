@@ -1,0 +1,4 @@
+Dataset,Split,Model,Top1_Ours,Top5_Ours,Top1_Paper,Top5_Paper,Notes
+NTU RGB+D 60,Cross-Subject,ST-GCN,81.28,96.56,81.5,-,Original paper: 81.5% (Yan et al. 2018)
+NTU RGB+D 60,Cross-Subject,CTR-GCN,89.94,98.28,89.9,-,Original paper: 89.9% joint-only (Chen et al. 2021)
+NTU RGB+D 120,Cross-Subject,CTR-GCN,84.91,97.33,84.9,-,Original paper: 84.9% joint-only (Chen et al. 2021)
