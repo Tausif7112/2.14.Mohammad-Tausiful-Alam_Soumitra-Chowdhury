@@ -1,0 +1,4 @@
+Model,Top-1 Acc (%),Precision (%),Recall (%),F1-Score (%)
+ST-GCN,61.22,63.89,61.25,60.61
+CTR-GCN,69.05,69.76,69.08,68.91
+Consensus (ours),70.75,71.82,70.76,70.48
