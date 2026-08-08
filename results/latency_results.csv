@@ -1,0 +1,4 @@
+configuration,mean_ms,std_ms,samples_per_sec,real_time_at_30fps
+ST-GCN alone,8.063,0.937,124.0,True
+CTR-GCN alone,23.915,2.516,41.8,True
+Full pipeline (ST-GCN + CTR-GCN + consensus),39.48,9.948,25.3,False
